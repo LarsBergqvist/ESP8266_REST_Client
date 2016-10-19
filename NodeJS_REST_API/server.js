@@ -24,7 +24,7 @@ app.put('/api/ButtonPressCount/:button_id', function(req,res) {
         count = req.body.count;
     }
     console.log("Button " + req.params.button_id + " has been pressed " + count + " times");
-    res.status(200).json({ "buttoncount" : count });
+    res.status(200).json({ "count" : count });
 
 });
 
